@@ -22,6 +22,10 @@ body {
     width: 100vw;
 }
 
+.white-text {
+    color: var(--white);
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -117,14 +121,14 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(to bottom right, var(--blue), var(--black), var(--purple));
 }
 /* About */
 #about {
     min-height: 100dvh;
+    background-image: linear-gradient(to bottom right, var(--blue), var(--black), var(--purple));
 }
 .content-box {
-    width: 90%;
+    width: 70%;
     max-width: 50ch;
     color: var(--white);
     backdrop-filter: blur(10px);
@@ -145,11 +149,64 @@ h3 {
     font-weight: 400;
     font-size: 1.5ch;
 }
+
+/* Games */ 
+#games {
+    min-height: 100dvh;
+    background-color: var(--black);
+}
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    width: 90%;
+    max-width: 90ch;
+    padding: 5em;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    border-radius: 1em;
+}
+.game-card:hover {
+    background-color: var(--blue);
+    box-shadow: 0 0 5px var(--blue), 0 0 20px var(--blue), 0 0 40px var(--blue);
+    cursor: pointer;
+}
+.game-logo {
+    max-width: 90%;
+    height: 80%;
+    transition: 200ms ease-in-out;
+}
+.game-text {
+    color: var(--white);
+    font-size: 1.25ch;
+    font-weight: 500;
+}
+#games > .white-text {
+    font-size: 1.5ch;
+    font-weight: 500;
+}
+/* Sponsors */
+#sponsors {
+    min-height: 50dvh;
+    font-size: 1.5ch;
+    font-weight: 900;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--black);
+}
 /* Contact */
 #contact {
     min-height: 30dvh;
     gap: 3em;
     color: var(--white);
+    background-image: linear-gradient(to bottom right, var(--blue), var(--black), var(--purple));
 }
 
 .contact-links {
@@ -172,6 +229,8 @@ h3 {
     color: var(--white);
 }
 
+
+/* Media queries */
 @media (max-width: 480px) {
     .navbar {
         display: none;
@@ -180,5 +239,21 @@ h3 {
 @media (max-width: 440px) {
     .hero-links {
         flex-direction: column;
+    }
+
+    .content-box h3 {
+        font-size: 1.5ch;
+    }
+    .content-box p {
+        font-size: 1.25ch;;
+    }
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    .pt {
+        padding-top: 1em;
+    }
+    .pb {
+        padding-bottom: 1em;
     }
 }
