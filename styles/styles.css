@@ -26,6 +26,9 @@ body {
     color: var(--white);
 }
 
+.yellow-text {
+    color: var(--yellow);
+}
 /* Navbar */
 .navbar {
     display: flex;
