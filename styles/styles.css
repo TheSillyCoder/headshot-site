@@ -121,6 +121,7 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 3em;
 }
 /* About */
 #about {
@@ -194,12 +195,30 @@ h3 {
 }
 /* Sponsors */
 #sponsors {
-    min-height: 50dvh;
+    min-height: 60dvh;
     font-size: 1.5ch;
     font-weight: 900;
     text-align: center;
     color: var(--white);
     background-color: var(--black);
+}
+
+.sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50ch;
+    width: 90%;
+    gap: 1em;
+}
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor-img {
+    width: 100%;
+    /* width: 30ch; */
 }
 /* Contact */
 #contact {
@@ -234,6 +253,9 @@ h3 {
 @media (max-width: 480px) {
     .navbar {
         display: none;
+    }
+    .sponsors {
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 440px) {
