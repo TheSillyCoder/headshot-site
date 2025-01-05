@@ -29,6 +29,17 @@ body {
 .yellow-text {
     color: var(--yellow);
 }
+.inq-link {
+    text-decoration: none;
+    font-family: inherit;
+    color: var(--yellow);
+    position: relative;
+}
+
+.inq-link:hover {
+    text-decoration: underline;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
