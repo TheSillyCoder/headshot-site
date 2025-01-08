@@ -137,7 +137,7 @@ h3 {
     align-items: center;
     flex-direction: column;
     gap: 3em;
-    padding: 2rem;
+    padding: 2rem 0 2eem 0;
 }
 /* About */
 #about {
