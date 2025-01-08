@@ -233,17 +233,28 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 300px;
+    /* gap: 1em; */
 }
 .sponsor a {
     height: 80%;
     display: grid;
     place-items: center;
+    transition: filter 200ms ease-in-out;
 }
 .sponsor-img {
     max-width: 100%;
-    max-height: 60%;
+    /* max-height: 60%; */
     /* width: 30ch; */
 }
+.sm {
+    max-width: 150px;
+    max-height: 200px;
+}
+.sponsor a:hover {
+    filter: drop-shadow(0 0 1em crimson);
+}
+
 /* Contact */
 #contact {
     min-height: 30dvh;
