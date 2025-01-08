@@ -209,12 +209,16 @@ h3 {
 }
 /* Sponsors */
 #sponsors {
-    min-height: 60dvh;
+    min-height: 100dvh;
     font-size: 1.5ch;
     font-weight: 900;
     text-align: center;
     color: var(--white);
     background-color: var(--black);
+}
+
+#sponsors h3 {
+    color: var(--yellow);
 }
 
 .sponsors {
@@ -230,8 +234,14 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+.sponsor a {
+    height: 80%;
+    display: grid;
+    place-items: center;
+}
 .sponsor-img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 60%;
     /* width: 30ch; */
 }
 /* Contact */
