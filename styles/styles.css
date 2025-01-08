@@ -137,6 +137,7 @@ h3 {
     align-items: center;
     flex-direction: column;
     gap: 3em;
+    padding: 1rem;
 }
 /* About */
 #about {
@@ -209,8 +210,8 @@ h3 {
     font-weight: 500;
 }
 /* Sponsors */
-#sponsors {
-    min-height: 100dvh;
+.spo-cont {
+    min-height: 50dvh;
     font-size: 1.5ch;
     font-weight: 900;
     text-align: center;
@@ -218,7 +219,7 @@ h3 {
     background-color: var(--black);
 }
 
-#sponsors h3 {
+.spo-cont h3 {
     color: var(--yellow);
 }
 
@@ -251,6 +252,10 @@ h3 {
 .sm {
     max-width: 150px;
     max-height: 200px;
+}
+.x {
+    font-size: 0.8ch;
+    color: var(--yellow);
 }
 .sponsor a:hover {
     filter: drop-shadow(0 0 1em crimson);
