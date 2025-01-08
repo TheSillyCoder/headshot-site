@@ -114,6 +114,7 @@ h3 {
     font-size: 1.5ch;
     text-transform: uppercase;
     transition: 200ms ease-in-out;
+    overflow: hidden;
 }
 
 .hero-btn:hover {
