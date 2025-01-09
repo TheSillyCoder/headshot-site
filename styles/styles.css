@@ -310,13 +310,16 @@ h3 {
     .content-box p {
         font-size: 1.25ch;;
     }
-    .games-grid {
-        grid-template-columns: 1fr;
-    }
     .pt {
         padding-top: 1em;
     }
     .pb {
         padding-bottom: 1em;
+    }
+}
+
+@media (max-width: 880px) {
+    .games-grid {
+        grid-template-columns: 1fr;
     }
 }
