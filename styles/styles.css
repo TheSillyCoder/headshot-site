@@ -226,7 +226,7 @@ h3 {
 
 .sponsors {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 50ch;
     width: 90%;
     gap: 1em;
