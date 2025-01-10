@@ -224,12 +224,17 @@ h3 {
     color: var(--yellow);
 }
 
-.sponsors {
+.bgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     max-width: 50ch;
     width: 90%;
     gap: 1em;
+}
+.sponsors {
+    grid-template-columns: 1fr 1fr;
+}
+.partners {
+    grid-template-columns: repeat(3, 1fr);
 }
 .sponsor {
     display: flex;
@@ -296,7 +301,10 @@ h3 {
     .navbar {
         display: none;
     }
-    .sponsors {
+    .bgrid {
+        grid-template-columns: 1fr;
+    }
+    .bgrid {
         grid-template-columns: 1fr;
     }
 }
